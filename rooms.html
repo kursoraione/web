@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise Hotel | Номера</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        Paradise Hotel
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="rooms.html" class="active">Номера</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+
+    <h1>Наши номера</h1>
+
+    <p>
+        Выберите номер, который идеально подойдет
+        для вашего отдыха или деловой поездки.
+    </p>
+
+</section>
+
+<section class="rooms-section">
+
+    <div class="room-grid">
+
+        <!-- Стандарт -->
+
+        <div class="room-card">
+
+            <img src="images/room-standard.jpg"
+                 alt="Номер Стандарт">
+
+            <div class="room-info">
+
+                <h3>Стандарт</h3>
+
+                <p>
+                    Уютный номер для одного или двух гостей
+                    со всеми необходимыми удобствами.
+                </p>
+
+                <ul class="room-features">
+                    <li>Площадь: 25 м²</li>
+                    <li>До 2 гостей</li>
+                    <li>Wi-Fi</li>
+                    <li>Телевизор</li>
+                    <li>Кондиционер</li>
+                </ul>
+
+                <div class="room-price">
+                    от 5 000 ₽/сутки
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="bookRoom('Стандарт')">
+                    Забронировать
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Стандарт Плюс -->
+
+        <div class="room-card">
+
+            <img src="images/room-standard-plus.jpg"
+                 alt="Стандарт Плюс">
+
+            <div class="room-info">
+
+                <h3>Стандарт Плюс</h3>
+
+                <p>
+                    Улучшенный номер с дополнительной
+                    рабочей зоной и современным интерьером.
+                </p>
+
+                <ul class="room-features">
+                    <li>Площадь: 30 м²</li>
+                    <li>До 2 гостей</li>
+                    <li>Рабочее место</li>
+                    <li>Мини-бар</li>
+                    <li>Wi-Fi</li>
+                </ul>
+
+                <div class="room-price">
+                    от 6 500 ₽/сутки
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="bookRoom('Стандарт Плюс')">
+                    Забронировать
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Делюкс -->
+
+        <div class="room-card">
+
+            <img src="images/room-deluxe.jpg"
+                 alt="Делюкс">
+
+            <div class="room-info">
+
+                <h3>Делюкс</h3>
+
+                <p>
+                    Просторный номер повышенной комфортности
+                    с панорамными окнами.
+                </p>
+
+                <ul class="room-features">
+                    <li>Площадь: 40 м²</li>
+                    <li>До 3 гостей</li>
+                    <li>Большая кровать</li>
+                    <li>Мини-бар</li>
+                    <li>Сейф</li>
+                </ul>
+
+                <div class="room-price">
+                    от 8 000 ₽/сутки
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="bookRoom('Делюкс')">
+                    Забронировать
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Семейный -->
+
+        <div class="room-card">
+
+            <img src="images/room-family.jpg"
+                 alt="Семейный номер">
+
+            <div class="room-info">
+
+                <h3>Семейный</h3>
+
+                <p>
+                    Идеальный вариант для отдыха всей семьей.
+                    Просторный номер с несколькими спальными местами.
+                </p>
+
+                <ul class="room-features">
+                    <li>Площадь: 45 м²</li>
+                    <li>До 4 гостей</li>
+                    <li>Две спальни</li>
+                    <li>Телевизор</li>
+                    <li>Wi-Fi</li>
+                </ul>
+
+                <div class="room-price">
+                    от 9 500 ₽/сутки
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="bookRoom('Семейный')">
+                    Забронировать
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Бизнес Люкс -->
+
+        <div class="room-card">
+
+            <img src="images/room-business.jpg"
+                 alt="Бизнес Люкс">
+
+            <div class="room-info">
+
+                <h3>Бизнес Люкс</h3>
+
+                <p>
+                    Отличное решение для деловых поездок
+                    и работы в комфортной обстановке.
+                </p>
+
+                <ul class="room-features">
+                    <li>Площадь: 50 м²</li>
+                    <li>До 2 гостей</li>
+                    <li>Рабочий кабинет</li>
+                    <li>Скоростной интернет</li>
+                    <li>Мини-бар</li>
+                </ul>
+
+                <div class="room-price">
+                    от 11 000 ₽/сутки
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="bookRoom('Бизнес Люкс')">
+                    Забронировать
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Президентский Люкс -->
+
+        <div class="room-card">
+
+            <img src="images/room-luxury.jpg"
+                 alt="Президентский Люкс">
+
+            <div class="room-info">
+
+                <h3>Президентский Люкс</h3>
+
+                <p>
+                    Самый роскошный номер гостиницы
+                    с эксклюзивным интерьером и видом на город.
+                </p>
+
+                <ul class="room-features">
+                    <li>Площадь: 80 м²</li>
+                    <li>До 4 гостей</li>
+                    <li>Гостиная</li>
+                    <li>Джакузи</li>
+                    <li>Панорамный вид</li>
+                </ul>
+
+                <div class="room-price">
+                    от 18 000 ₽/сутки
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="bookRoom('Президентский Люкс')">
+                    Забронировать
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="booking-info">
+
+    <h2>Информация о бронировании</h2>
+
+    <p>
+        Заезд осуществляется после 14:00,
+        выезд до 12:00.
+        Возможен ранний заезд и поздний выезд
+        по предварительному согласованию.
+    </p>
+
+    <p>
+        В стоимость проживания включены:
+        завтрак «Шведский стол»,
+        пользование Wi-Fi,
+        парковка и посещение фитнес-зала.
+    </p>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <p>
+            © 2026 Paradise Hotel.
+            Все права защищены.
+        </p>
+
+        <p>
+            Телефон: +7 (999) 123-45-67
+        </p>
+
+        <p>
+            Email: info@paradisehotel.ru
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
